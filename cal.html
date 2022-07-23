@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>cal</title>
+</head>
+<body>
+	<input type="" name="" id="first">
+	<select id="sel">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+			<option value="%">%</option>
+	</select>
+	<input type="" name="" id="second"><br><br>
+	<button onclick="on()" >result</button>
+	<input type="" name="" id="third">
+</body>
+<script type="text/javascript">
+	function on(){
+		 var a=document.getElementById('first').value
+		 var b=document.getElementById('second').value
+		 var c=document.getElementById('sel').value
+
+			 if(c == '+'){
+			 	 var result=parseInt (a)+ parseInt (b)
+			 }
+			 if(c == '-'){
+			 	 var result=parseInt (a)- parseInt (b)
+			 }
+			 if(c == '*'){
+			 	 var result=parseInt (a)* parseInt (b)
+			 }
+			 if(c == '/'){
+			 	 var result=parseInt (a)/ parseInt (b)
+			 }
+			 if(c == '%'){
+			 	 var result=parseInt (a)% parseInt (b)
+			 }
+			 document.getElementById('third').value=result;
+	}
+
+</script>
+</html>

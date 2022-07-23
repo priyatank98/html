@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>password</title>
+</head>
+<body>
+	
+		<label type="text">name</label>
+		<input type="text" name=""><br><br>
+		<label type="password">password</label>
+		<input type="password" name="" id="pass"><br><br>
+		<input type="checkbox" name="" onclick="on()">show password
+</body>
+		<script type="text/javascript">
+			function on(){
+				var a=document.getElementById('pass');
+				if(a.type === "password"){
+					a.type="text"
+				}
+			
+			else(
+					a.type="password"
+				)
+
+			}
+
+
+		</script>
+</html>
